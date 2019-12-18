@@ -23,7 +23,7 @@ body {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 
@@ -121,6 +121,43 @@ body {
   padding: 19px 0px 15px 0px;
   font-weight: bold;
 }
+
+
+/* 카테고리 토글 메뉴 */
+#category{
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+  z-index: 9;
+  height: 0px;
+  opacity: 0;
+  /* border: 1px solid red; */
+  transition: 0.4s;  
+}
+#category .container{
+
+}
+#category.show {
+  padding: 20px;
+  height: 240px;
+  opacity: 1;
+}
+
+#category dl {
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+  line-height: 2;
+}
+#category dl dt{
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid #444;
+}
+
 
 /* 메인배너 */
 #main_banner { 

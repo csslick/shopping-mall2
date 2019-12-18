@@ -39,4 +39,11 @@ $(function(){
     responsive: false,
   });
 
+  $('#category_btn').click(function(){
+    $('#category').toggleClass('show');
+  })
+  $('header, section').click(function(){
+    $('#category').removeClass('show');
+  })
+
 }); // end$
